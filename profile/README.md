@@ -46,6 +46,8 @@ The model in four steps:
 | [**sdk**](https://github.com/project-arete/sdk) | The Arete SDK — build CNS/CP applications in **Node, Python, or Rust** |
 | [**arete-monitor**](https://github.com/project-arete/arete-monitor) | A live dashboard for CNS/CP realms — systems, contexts, connections, and a realm graph. 📦 [**Easy installers for macOS / Windows / Linux**](https://github.com/project-arete/arete-monitor/blob/main/INSTALL.md) |
 | [**helm-charts**](https://github.com/project-arete/helm-charts) | Helm charts for deploying Arete |
+| [**widget-library**](https://github.com/project-arete/widget-library) | The online widget library — community-extensible YAML widget definitions, validated against the CP registry and published as a [live catalog](https://project-arete.github.io/widget-library/) |
+| [**aretehosting**](https://github.com/project-arete/aretehosting) | The Arete Hosting application (Go + React) — deploy it in your own environment (Docker Compose or Kubernetes) to run **your own fleet of Arete orchestrators** |
 | [**website**](https://github.com/project-arete/website) | Source of the Project Arete website |
 
 **Connection Profiles** are governed centrally in the
@@ -64,6 +66,11 @@ realm to point the SDK, Monitor, or your own applications at.
 > Arete Hosting is **free to use right now**. Down the road it will carry a
 > fee — orchestrators take real compute to operate — so early experimenting is
 > a good deal.
+
+Prefer to run things yourself? The **same software that powers Arete Hosting**
+lives in the [aretehosting](https://github.com/project-arete/aretehosting)
+repo — deploy it on your own infrastructure and operate your own fleet of
+orchestrators.
 
 ## Get started
 
