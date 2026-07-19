@@ -1,5 +1,68 @@
-#Welcome to Project Arete
+<p align="center">
+  <img src="https://raw.githubusercontent.com/project-arete/.github/main/profile/logo.png" width="96" alt="Project Arete logo" />
+</p>
 
-For more info on Project Arete, visit [ProjectArete.io](https://projectarete.io)
+<h1 align="center">Project Arete</h1>
 
+<p align="center">
+  <strong>Governed connectivity for systems, devices, and AI agents.</strong><br/>
+  The orchestrator and SDKs for <a href="https://cnscp.github.io/web">CNS/CP</a> —
+  the layer that decides <em>whether</em> two nodes should connect, under what contract,
+  and in what context, before any data flows.
+</p>
 
+---
+
+## What is this?
+
+Traditional networks connect **addresses** and hope the rules get bolted on later.
+**CNS/CP** (Connectivity Naming System using Connection Profiles) is
+**relationship-centric** instead: nodes declare *what they can do* — as
+**provider** or **consumer** of a **Connection Profile (CP)**, a machine-evaluable
+contract — and the substrate decides what binds to what. Nothing connects
+without declared identity, roles, and a matching CP: **deny-by-default**,
+auditable by design.
+
+> Others standardize messages. CNS/CP standardizes **binding**.
+
+**Arete** is the orchestrator you deploy against. It performs **brokerage** —
+matching compatible provider/consumer declarations in a shared context — then
+instantiates governed connections and manages them through their whole
+lifecycle. Depending on the CP, it either mediates the data itself (in-band)
+or steps aside once the connection is governed and lets data flow peer-to-peer
+(out-of-band).
+
+The model in four steps:
+
+**declare** → nodes publish the CPs they provide or consume &nbsp;·&nbsp;
+**broker** → Arete matches compatible pairs in context &nbsp;·&nbsp;
+**bind** → a governed connection is instantiated &nbsp;·&nbsp;
+**operate** → the contract is monitored, adjusted, and audited for life
+
+## Explore
+
+| Repository | What it is |
+|---|---|
+| [**sdk**](https://github.com/project-arete/sdk) | The Arete SDK — build CNS/CP applications in **Node, Python, or Rust** |
+| [**arete-monitor**](https://github.com/project-arete/arete-monitor) | A live dashboard for CNS/CP realms — systems, contexts, connections, and a realm graph. 📦 [**Easy installers for macOS / Windows / Linux**](https://github.com/project-arete/arete-monitor/blob/main/INSTALL.md) |
+| [**helm-charts**](https://github.com/project-arete/helm-charts) | Helm charts for deploying Arete |
+| [**website**](https://github.com/project-arete/website) | Source of the Project Arete website |
+
+**Connection Profiles** are governed centrally in the
+[CP registry](https://cp.padi.io) — browse existing profiles like
+[`padi.light`](https://cp.padi.io/profiles/padi.light) before authoring your own.
+
+## Get started
+
+1. **See a realm live** — install [Arete Monitor](https://github.com/project-arete/arete-monitor/blob/main/INSTALL.md)
+   and connect to a control plane; watch systems declare capabilities and the
+   broker bind them in real time.
+2. **Build something** — grab the [SDK](https://github.com/project-arete/sdk),
+   register a node, and declare your first provider or consumer.
+3. **Design a contract** — model a new capability as a CP: two asymmetric
+   roles, a schema, constraints, a context, and a data mode.
+
+## Learn more
+
+- 🌐 [projectarete.io](https://projectarete.io) — the project website
+- 📖 [CNS/CP specification](https://github.com/CNSCP/specification) and the [CNS/CP site](https://cnscp.github.io/web)
