@@ -52,11 +52,25 @@ The model in four steps:
 [CP registry](https://cp.padi.io) — browse existing profiles like
 [`padi.light`](https://cp.padi.io/profiles/padi.light) before authoring your own.
 
+## Get a realm — no deployment required
+
+**[Arete Hosting](https://aretehosting.com)** is a site we operate that gives
+you your own Arete instance in a few clicks: sign in, click **Add
+orchestrator**, pick a name — and you get a ready-to-run orchestrator at
+`<name>.aretehosting.com` (deployed from the official Helm chart) with login
+credentials to hand to your apps and users. It's the fastest way to get a live
+realm to point the SDK, Monitor, or your own applications at.
+
+> Arete Hosting is **free to use right now**. Down the road it will carry a
+> fee — orchestrators take real compute to operate — so early experimenting is
+> a good deal.
+
 ## Get started
 
-1. **See a realm live** — install [Arete Monitor](https://github.com/project-arete/arete-monitor/blob/main/INSTALL.md)
-   and connect to a control plane; watch systems declare capabilities and the
-   broker bind them in real time.
+1. **See a realm live** — create an orchestrator on
+   [Arete Hosting](https://aretehosting.com) (or use your own), install
+   [Arete Monitor](https://github.com/project-arete/arete-monitor/blob/main/INSTALL.md),
+   and watch systems declare capabilities and the broker bind them in real time.
 2. **Build something** — grab the [SDK](https://github.com/project-arete/sdk),
    register a node, and declare your first provider or consumer.
 3. **Design a contract** — model a new capability as a CP: two asymmetric
