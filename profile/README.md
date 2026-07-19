@@ -45,8 +45,9 @@ The model in four steps:
 |---|---|
 | [**sdk**](https://github.com/project-arete/sdk) | The Arete SDK — build CNS/CP applications in **Node, Python, or Rust** |
 | [**arete-monitor**](https://github.com/project-arete/arete-monitor) | A live dashboard for CNS/CP realms — systems, contexts, connections, and a realm graph. 📦 [**Easy installers for macOS / Windows / Linux**](https://github.com/project-arete/arete-monitor/blob/main/INSTALL.md) |
+| [**arete-widget**](https://github.com/project-arete/arete-widget) | Virtual widgets on a CNS/CP realm — describe a device as a **YAML widget** (its CP capabilities plus a faceplate) and the app registers it as a governed node with a live control panel, **no hardware required**. Great for prototyping contracts and standing in for real devices. 📦 [**Easy installers for macOS / Windows / Linux**](https://github.com/project-arete/arete-widget/blob/main/INSTALL.md) |
+| [**widget-library**](https://github.com/project-arete/widget-library) | The online widget library — community-extensible YAML widget definitions, validated against the CP registry and published as a [live catalog](https://project-arete.github.io/widget-library/) that **Arete Widget** loads at runtime |
 | [**helm-charts**](https://github.com/project-arete/helm-charts) | Helm charts for deploying Arete |
-| [**widget-library**](https://github.com/project-arete/widget-library) | The online widget library — community-extensible YAML widget definitions, validated against the CP registry and published as a [live catalog](https://project-arete.github.io/widget-library/) |
 | [**aretehosting**](https://github.com/project-arete/aretehosting) | The Arete Hosting application (Go + React) — deploy it in your own environment (Docker Compose or Kubernetes) to run **your own fleet of Arete orchestrators** |
 | [**website**](https://github.com/project-arete/website) | Source of the Project Arete website |
 
@@ -78,9 +79,13 @@ orchestrators.
    [Arete Hosting](https://aretehosting.com) (or use your own), install
    [Arete Monitor](https://github.com/project-arete/arete-monitor/blob/main/INSTALL.md),
    and watch systems declare capabilities and the broker bind them in real time.
-2. **Build something** — grab the [SDK](https://github.com/project-arete/sdk),
+2. **Put a node on it — no code** — install
+   [Arete Widget](https://github.com/project-arete/arete-widget/blob/main/INSTALL.md),
+   pick a widget from the library, and add a governed virtual device to your
+   realm in seconds.
+3. **Build something** — grab the [SDK](https://github.com/project-arete/sdk),
    register a node, and declare your first provider or consumer.
-3. **Design a contract** — model a new capability as a CP: two asymmetric
+4. **Design a contract** — model a new capability as a CP: two asymmetric
    roles, a schema, constraints, a context, and a data mode.
 
 ## Learn more
