@@ -45,6 +45,7 @@ The model in four steps:
 |---|---|
 | [**sdk**](https://github.com/project-arete/sdk) | The Arete SDK — build CNS/CP applications in **Node, Python, or Rust** |
 | [**arete-monitor**](https://github.com/project-arete/arete-monitor) | A live dashboard for CNS/CP realms — systems, contexts, connections, and a realm graph. 📦 [**Easy installers for macOS / Windows / Linux**](https://github.com/project-arete/arete-monitor/blob/main/INSTALL.md) |
+| [**arete-monitor-pwa**](https://github.com/project-arete/arete-monitor-pwa) | Arete Monitor as an **installable web app** — 🌐 [**open it in any browser**](https://project-arete.github.io/arete-monitor-pwa/), nothing to install, add it to your phone's home screen. Works with any realm presenting a valid certificate (all `*.aretehosting.com` realms qualify) |
 | [**arete-widget**](https://github.com/project-arete/arete-widget) | Virtual widgets on a CNS/CP realm — describe a device as a **YAML widget** (its CP capabilities plus a faceplate) and the app registers it as a governed node with a live control panel, **no hardware required**. Great for prototyping contracts and standing in for real devices. 📦 [**Easy installers for macOS / Windows / Linux**](https://github.com/project-arete/arete-widget/blob/main/INSTALL.md) |
 | [**widget-library**](https://github.com/project-arete/widget-library) | The online widget library — community-extensible YAML widget definitions, validated against the CP registry and published as a [live catalog](https://project-arete.github.io/widget-library/) that **Arete Widget** loads at runtime |
 | [**helm-charts**](https://github.com/project-arete/helm-charts) | Helm charts for deploying Arete |
@@ -76,8 +77,10 @@ orchestrators.
 ## Get started
 
 1. **See a realm live** — create an orchestrator on
-   [Arete Hosting](https://aretehosting.com) (or use your own), install
-   [Arete Monitor](https://github.com/project-arete/arete-monitor/blob/main/INSTALL.md),
+   [Arete Hosting](https://aretehosting.com) (or use your own), then open the
+   [Arete Monitor web app](https://project-arete.github.io/arete-monitor-pwa/)
+   right in your browser — or install the
+   [desktop Monitor](https://github.com/project-arete/arete-monitor/blob/main/INSTALL.md) —
    and watch systems declare capabilities and the broker bind them in real time.
 2. **Put a node on it — no code** — install
    [Arete Widget](https://github.com/project-arete/arete-widget/blob/main/INSTALL.md),
